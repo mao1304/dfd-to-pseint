@@ -18,13 +18,14 @@ This project provides a tool to translate Data Flow Diagrams (DFD) into PSeInt p
    - Upload `google-colab/dfd_to_pseint_translate.ipynb` from this repository
    - upload dataset.csv into colab, and run for train de model
   
-     1.1 **if you do not want to run your own model load the model into best-model, place it in a folder, and make sure the path in the code corresponds to the location of the “best-model” folder.
+     1.1 **if you do not want to run your own model load the model into best-model, place it in a folder, and make sure the path in the code corresponds to the location of the “best-model” folder.**
 
 2. **Run the Notebook**:
    - Execute all cells sequentially (Runtime > Run all)
    - The API will start automatically on port 5000
 
 3. **Access the Interface**:
+   - load the index.html file found in the extra folder 
    - Use the URL provided by Colab after running the last cell
    - Upload `.dfd` files to get translated PSeInt code
 
@@ -66,25 +67,26 @@ with open("output.txt", "wb") as f:
     f.write(response.content)
 
 .
-## Project Structure
-├── google-colab/                # Colab implementation
-│   ├── dfd_to_pseint_translate.ipynb
-│   └── dfd_to_pseint_translate.py
+## 📂 Project Structure
+
+📁 google-colab/ # Colab implementation
+│ ├── dfd_to_pseint_translate.ipynb
+│ └── dfd_to_pseint_translate.py
 │
-├── local/                      # Local deployment
-│   ├── app/
-│   │   ├── app.py              # Flask application
-│   │   └── templates/
-│   │       └── index.html      # Web interface
-│   ├── .dockerfile
-│   ├── constants.py
-│   ├── docker-compose.yml
-│   ├── helpers.py
-│   └── requirements.txt
+📁 local/ # Local deployment
+│ ├── app/
+│ │ ├── app.py # Flask application
+│ │ └── templates/
+│ │ └── index.html # Web interface
+│ ├── .dockerfile
+│ ├── constants.py
+│ ├── docker-compose.yml
+│ ├── helpers.py
+│ └── requirements.txt
 │
-└── extra/                      # Additional resources
-    ├── dataset.csv             # Training data
-    └── index.html              # Alternative interface
+📁 extra/ # Additional resources
+│ ├── dataset.csv # Training data
+│ └── index.html # Interface for Google Colab
     
 ## Model Information
 Metric	Score
