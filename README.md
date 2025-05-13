@@ -69,24 +69,27 @@ with open("output.txt", "wb") as f:
 .
 ## 📂 Project Structure
 
-📁 google-colab/ # Colab implementation
-│ ├── dfd_to_pseint_translate.ipynb
-│ └── dfd_to_pseint_translate.py
+```
+.
+├── google-colab/                # Colab implementation
+│   ├── dfd_to_pseint_translate.ipynb
+│   └── dfd_to_pseint_translate.py
 │
-📁 local/ # Local deployment
-│ ├── app/
-│ │ ├── app.py # Flask application
-│ │ └── templates/
-│ │ └── index.html # Web interface
-│ ├── .dockerfile
-│ ├── constants.py
-│ ├── docker-compose.yml
-│ ├── helpers.py
-│ └── requirements.txt
+├── local/                       # Local deployment
+│   ├── app/
+│   │   ├── app.py               # Flask application
+│   │   └── templates/
+│   │       └── index.html       # Web interface
+│   ├── .dockerfile
+│   ├── constants.py
+│   ├── docker-compose.yml
+│   ├── helpers.py
+│   └── requirements.txt
 │
-📁 extra/ # Additional resources
-│ ├── dataset.csv # Training data
-│ └── index.html # Interface for Google Colab
+└── extra/                       # Additional resources
+    ├── dataset.csv              # Training data
+    └── index.html               # Interface for Google Colab
+```
     
 ## Model Information
 Metric	Score
